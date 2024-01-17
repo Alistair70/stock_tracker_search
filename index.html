@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View/Add Stocks</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">    
+</head>
+<body>
+    <div class = "container">
+        <div class="button-container">            
+            <button id="toDash" class="btn">Dashboard</button>
+            <button id="logout" class="btn_logout">Logout</button> 
+        </div>
+        <h1>Stock Tracking Application</h1>
+        
+        <h2>Existing Tickers:</h2>
+        <ul class = "no-bullets" id = "existing-stocks"></ul>
+
+        
+        <div class="input-container" style="display:block;" id="searchForm">
+            <h2>Search Stocks</h2>
+            <input type="text" id="search_item" placeholder="Company Search"><br><br>
+            <button id="stock_search" class="btn_new">Search</button><br>
+            <label id="error"></label>
+        </div>
+        
+        <div class="input-container" style="display:none;" id="results">
+            <h2>Results</h2>
+            <ul class = "no-bullets" id = "search-results"></ul>
+        </div>
+        
+        <h2 id = "error_message"></h2>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
