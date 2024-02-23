@@ -38,7 +38,7 @@ function search(company_name) {
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({company_name:company_name}),        
+        body: JSON.stringify({company_name:company_name,encoded_id:encoded_id}),        
     })
     .then(response => response.json())
     .then(data => {
