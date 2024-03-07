@@ -43,7 +43,6 @@ function search(company_name) {
     .then(response => response.json())
     .then(data => {
         matches = data.matches;
-        console.log(matches)
         const itemList = document.getElementById('search-results');
         matches.forEach(match => {
             const listItem = document.createElement('li');
@@ -83,7 +82,6 @@ function fetchCurrentStocks()
     })
     .then(response => response.json())
     .then(data => {
-        console.log(data.stocks)
         stocks = data.stocks;
         const itemList = document.getElementById('existing-stocks');
         stocks.forEach(stock => {
@@ -137,7 +135,6 @@ function addTicker(stockTicker) {
     .then(response => response.json())
     .then(data => {
         response = data.message;
-        console.log(response)
     })
     
 }
